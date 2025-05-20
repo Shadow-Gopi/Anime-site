@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slider with Navbar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ 
+<div class="overlay">
+
+    
+  <video autoplay muted loop id="bg-video">
+    <source src="videos/bg-video.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  
+
+
+
+  
+
+  <div class="continer">
+    <!-- <h2 id="heading">⒢ FIRST PAGE</h2> -->
+     <a href="index.html" id="heading">⒢ FIRST PAGE</a>
+   <a onclick="showSection('home')">Home</a>
+<a onclick="showSection('new')">New</a>
+<a onclick="showSection('popular')">Popular</a>
+
+    <div class="Dropdown" id="generDropdown">
+      <button class="Dropdown-Button" onclick="toggleDropdown()">Genre ▼</button>
+      <div class="Dropdown-c">
+        <a href="#">Adventure</a>
+        <a href="#">Action</a>
+        <a href="#">Comedy</a>
+        <a href="#">Sci-fi</a>
+      </div>
+    </div>
+    <div class="profile">
+      <a href="login.html" class="a1">Login 🥷🏽</a>
+    </div>
+    <button class="search-btn" onclick="toggleSearch()">🔍</button>
+
+
+    <!-- Hidden Search Bar -->
+    <div id="searchContainer" style="display: none; text-align: center; margin-top: 10px;">
+      <input
+        type="text"
+        id="searchBar"
+        placeholder="Search anime and press Enter..."
+        style="padding: 10px; width: 300px; border-radius: 6px; border: 1px solid #ccc;" />
+    </div>
+  </div>
+
+
+     <!-- Slider -->
+
+  <div class="slide-container">
+    <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+    <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+    
+    <div class="slide" id="slide">
+      <div class="slide-item">
+        <img  src="images/Onepiece.jpg" alt="One Piece" />
+        <div class="text-overlay">
+          <h2>One Piece</h2>
+          <p>
+            Monkey D. Luffy wants to become the King of all pirates. Along his quest he meets: 
+            a skilled swordsman named Roronoa Zolo; Nami, a greedy thief who has a knack for navigation; 
+            Usopp, a great liar who has an affinity for inventing; Sanji, a warrior cook; Chopper, a sentient deer who is also a skilled
+          </p>
+          <button>Watch Now</button>
+        </div>
+      </div>
+
+      <div class="slide-item">
+        <img   src="images/windbreaker.jpg" alt="Wind Breaker" />
+        <div class="text-overlay">
+          <h2>Wind Breaker</h2>
+          <p>Wind Breaker is a Japanese manga series written and illustrated by Satoru Nii that began serialization on 
+            Kodansha's Magazine Pocket manga website in January 2021. As of March 
+            2025, the series' individual chapters have been collected in 21 tankōbon volumes.</p>
+          <button>Watch Now</button>
+        </div>
+      </div>
+
+      <div class="slide-item">
+        <img  src="images/TBFTE.jpg" alt="TBFTE" />
+        <div class="text-overlay">
+          <h2>TBFTE</h2>
+          <p>After a mysterious death, King Grey is reborn as a baby, while retaining his previous wisdom; 
+            he seeks to correct the mistakes of his past life..</p>
+          <button>Watch Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div id="homeSection"> 
+  
+     <!-- ANIME CARDS SECTION -->
+     <div class="anime-section">
+      <h2 class="section-title">Most Popular</h2>
+      <div class="anime-cards">
+        <div class="anime-card" onclick="window.location.href='anime-details.html?id=attack-on-titan';" style="cursor: pointer;">
+          <img src="images/Attack On Titan.jpg" alt="Attack on Titan" />
+          <h3>Attack on Titan</h3>
+          <h3>Action, Drama | 2013 | ⭐ 9.0</h3>
+        </div>
+<div class="anime-card" onclick="window.location.href='anime-details.html?id=one-piece';" style="cursor: pointer;">
+          <img src="images/One piece.jpg" alt="Demon Slayer" />
+          <h3>One piece</h3>
+          <h3><p>Action, Adventure | 1999 | ⭐ 9.1</p></h3>
+        </div>
+        <div class="anime-card" onclick="window.location.href='anime-details.html?id=dragon-ball';" style="cursor: pointer;">
+          <img src="images/Dragon Ball.jpg" alt="Jujutsu Kaisen" />
+          <h3>Dragon Ball</h3> 
+           <h3>Action, Martial Arts | 1986 | ⭐ 8.5</h3>
+
+        </div>
+        <div class="anime-card" onclick="window.location.href='anime-details.html?id=bleach';" style="cursor: pointer;">
+          <img src="images/Bleach.jpg" alt="Jujutsu Kaisen" />
+          <h3>Bleach</h3>
+          <h3>Action, Soul Reapers | 2004 | ⭐ 8.1</h3>
+        </div>
+        <div class="anime-card" onclick="window.location.href='anime-details.html?id=solo-leveling';" style="cursor: pointer;">
+          <img src="images/solo leveling.jpg" alt="Jujutsu Kaisen" />
+          <h3>Solo Leveling</h3>
+          <h3>Action, Fantasy | 2024 | ⭐ 8.6</h3>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  <!-- ANIME CARDS SECTION 2 -->
+  <div class="anime-section">
+    <h2 class="section-title">Trending Anime</h2>
+    <div class="anime-cards">
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=aharen-san';" style="cursor: pointer;">
+        <img src="images/Aharen-san wa Hakarenai.jpg" alt="Attack on Titan" />
+        <h3>Aharen-san wa Hakarenai</h3>
+        <h3>Comedy, Romance | 2022 | ⭐ 7.2</h3>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=fire-force';" style="cursor: pointer;">
+        <img src="images/Fire Force.jpg" alt="Demon Slayer" />
+        <h3>Fire Force</h3>
+        <h3><p>Action, Supernatural | 2019 | ⭐ 7.7</p></h3>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=the-brilliant-healer';" style="cursor: pointer;">
+        <img src="images/The Brilliant Healer's New Life in the Shadows.jpg" alt="Jujutsu Kaisen" />
+        <h3>The Brilliant Healer's New Life in the Shadows</h3> 
+         <h3>Fantasy, Isekai | 2024 | ⭐ 7.5</h3>
+
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=evil-lord';" style="cursor: pointer;">
+        <img src="images/I'm the Evil Lord of an Intergalactic Empire!.jpg" alt="Jujutsu Kaisen" />
+        <h3>I'm the Evil Lord of an Intergalactic Empire!</h3>
+        <h3>Sci-Fi, Comedy | 2024 | ⭐ 7.8</h3>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=overlord';" style="cursor: pointer;">
+        <img src="images/Overlord.jpg" alt="Jujutsu Kaisen" />
+        <h3>Overlord</h3>
+        <h3>Action, Fantasy | 2024 | ⭐ 8.6</h3>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- new html -->
+
+<div id="newSection" style="display: none;">
+
+  <div class="anime-section">
+    <h2 class="section-title">🔥 Top Picks</h2>
+    <div class="anime-cards">
+      <div class="anime-card"  onclick="window.location.href='anime-details.html?id=one-piece';" style="cursor: pointer;">
+        <img src="images/One piece.jpg" alt="One Piece" />
+        <h3>One Piece</h3>
+        <p>Action, Adventure | 1999 | ⭐ 9.1</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=Attack-on-Titan';" style="cursor: pointer;">
+        <img src="images/Attack On Titan.jpg" alt="Attack on Titan" />
+        <h3>Attack on Titan</h3>
+        <p>Action, Drama | 2013 | ⭐ 9.0</p>
+      </div>
+      <div class="anime-card"  onclick="window.location.href='anime-details.html?id=solo-leveling';" style="cursor: pointer;">
+        <img src="images/solo leveling.jpg" alt="Solo Leveling" />
+        <h3>Solo Leveling</h3>
+        <p>Action, Fantasy | 2024 | ⭐ 8.6</p>
+      </div>
+      <div class="anime-card"  onclick="window.location.href='anime-details.html?id=jujutsu-kaisen';" style="cursor: pointer;">
+        <img src="images/Jujutsu Kaisen.jpg" alt="Jujutsu Kaisen" />
+        <h3>Jujutsu Kaisen</h3>
+        <p>Action, Supernatural | 2020 | ⭐ 8.7</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=the-seven-Deadly-Sins';" style="cursor: pointer;">
+       <img src="images/The Seven Deadly Sins.jpg" alt="The Seven Deadly Sins" />
+       <h3>The Seven Deadly Sins</h3>
+       <p>Action, Fantasy | 2014 | ⭐ 7.8</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="anime-section">
+    <h2 class="section-title">🆕 New Releases</h2>
+    <div class="anime-cards">
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=the-brilliant-healer';" style="cursor: pointer;">
+        <img src="images/The Brilliant Healer's New Life in the Shadows.jpg" alt="The Brilliant Healer" />
+        <h3>The Brilliant Healer</h3>
+        <p>Fantasy, Isekai | 2024 | ⭐ 7.5</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=fire-force';" style="cursor: pointer;">
+        <img src="images/Fire Force.jpg" alt="Fire Force" />
+        <h3>Fire Force</h3>
+        <p>Action, Supernatural | 2019 | ⭐ 7.7</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=evil-lord';" style="cursor: pointer;">
+        <img src="images/I'm the Evil Lord of an Intergalactic Empire!.jpg" alt="I'm the Evil Lord" />
+        <h3>I’m the Evil Lord</h3>
+        <p>Sci-Fi, Comedy | 2024 | ⭐ 7.8</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=windbreaker';" style="cursor: pointer;">
+        <img src="images/Wind Breaker.jpg" alt="Wind Breaker" />
+        <h3>Wind Breaker</h3>
+        <p>Sports, Drama | 2025 | ⭐ 8.3</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=Chainsaw-man';" style="cursor: pointer;">
+       <img src="images/Chainsaw Man.jpg" alt="Chainsaw Man" />
+       <h3>Chainsaw Man</h3>
+       <p>Action, Horror | 2022 | ⭐ 8.6</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="anime-section">
+    <h2 class="section-title">🌟 Classic Legends</h2>
+    <div class="anime-cards">
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=dragon-ball';" style="cursor: pointer;">
+        <img src="images/Dragon Ball.jpg" alt="Dragon Ball" />
+        <h3>Dragon Ball</h3>
+        <p>Action, Martial Arts | 1986 | ⭐ 8.5</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=Naruto';" style="cursor: pointer;">
+        <img src="images/Naruto.jpg" alt="Naruto" />
+        <h3>Naruto</h3>
+        <p>Action, Ninja | 2002 | ⭐ 8.3</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=bleach';" style="cursor: pointer;">
+        <img src="images/Bleach.jpg" alt="Bleach" />
+        <h3>Bleach</h3>
+        <p>Action, Soul Reapers | 2004 | ⭐ 8.1</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=Fullmetal-Alchemist';" style="cursor: pointer;">
+        <img src="images/Fullmetal Alchemist.jpeg" alt="Fullmetal Alchemist" />
+        <h3>Fullmetal Alchemist</h3>
+        <p>Action, Adventure | 2009 | ⭐ 9.0</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=the-Rising-of-Shield-Hero';" style="cursor: pointer;">
+        <img src="images/The Rising of the Shield Hero.jpg" alt="The Rising of the Shield Hero" />
+        <h3>The Rising of the Shield Hero</h3>
+       <p>Action, Isekai | 2019 | ⭐ 8.0</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="anime-section">
+    <h2 class="section-title">🎭 Chill & Comedy</h2>
+    <div class="anime-cards">
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=aharen-san';" style="cursor: pointer;">
+        <img src="images/Aharen-san wa Hakarenai.jpg" alt="Aharen-san wa Hakarenai" />
+        <h3>Aharen-san wa Hakarenai</h3>
+        <p>Comedy, Romance | 2022 | ⭐ 7.2</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=Kaguya-sama';" style="cursor: pointer;">
+        <img src="images/kaguya sama.jpg" alt="Kaguya-sama" />
+        <h3>Kaguya-sama: Love is War</h3>
+        <p>Comedy, Romance | 2019 | ⭐ 8.7</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=Spy-x-Family';" style="cursor: pointer;">
+        <img src="images/Spy x Family.jpg" alt="Spy x Family" />
+        <h3>Spy x Family</h3>
+        <p>Comedy, Action | 2022 | ⭐ 8.6</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=Konosuba';" style="cursor: pointer;">
+        <img src="images/Konosuba.jpg" alt="Konosuba" />
+        <h3>Konosuba</h3>
+        <p>Comedy, Fantasy | 2016 | ⭐ 8.2</p>
+      </div>
+      <div class="anime-card" onclick="window.location.href='anime-details.html?id=my-Roommate-is-a-Cat';" style="cursor: pointer;">
+       <img src="images/My Roommate is a Cat.jpg" alt="My Roommate is a Cat" />
+       <h3>My Roommate is a Cat</h3>
+       <p>Slice of Life, Drama | 2019 | ⭐ 7.8</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- popular section -->
+
+<div class="popularsection" style="display: none;"   id="popular-section">
+  <div class="page-wrapper">
+    <h1 class="title-thing">Popular Anime</h1>
+    <div class="anime-gallery">
+
+
+     <div class="anime-box" onclick="window.location.href='anime-details.html?id=attack-on-titan';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Attack On Titan.jpg" alt="Attack on Titan">
+  <div class="anime-details">
+    <div class="anime-name">Attack on Titan</div>
+    <div class="anime-meta">Action, Drama</div>
+    <div class="anime-score">Rating: 9.0</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=demon-slayer';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Demon slayer.jpg" alt="Demon Slayer">
+  <div class="anime-details">
+    <div class="anime-name">Demon Slayer</div>
+    <div class="anime-meta">Action, Supernatural</div>
+    <div class="anime-score">Rating: 8.7</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=jujutsu-kaisen';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Jujutsu Kaisen.jpg" alt="Jujutsu Kaisen">
+  <div class="anime-details">
+    <div class="anime-name">Jujutsu Kaisen</div>
+    <div class="anime-meta">Action, Dark Fantasy</div>
+    <div class="anime-score">Rating: 8.8</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=death-note';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Death note.jpg" alt="Death Note">
+  <div class="anime-details">
+    <div class="anime-name">Death Note</div>
+    <div class="anime-meta">Psychological, Thriller</div>
+    <div class="anime-score">Rating: 9.0</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=one-punch-man';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/One Punch Man.jpg" alt="One Punch Man">
+  <div class="anime-details">
+    <div class="anime-name">One Punch Man</div>
+    <div class="anime-meta">Action, Comedy</div>
+    <div class="anime-score">Rating: 8.6</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=fma-brotherhood';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Fullmetal Alchemist.jpeg" alt="Fullmetal Alchemist: Brotherhood">
+  <div class="anime-details">
+    <div class="anime-name">FMA: Brotherhood</div>
+    <div class="anime-meta">Action, Adventure</div>
+    <div class="anime-score">Rating: 9.2</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=naruto-shippuden';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Naruto shippend.jpg" alt="Naruto Shippuden">
+  <div class="anime-details">
+    <div class="anime-name">Naruto Shippuden</div>
+    <div class="anime-meta">Action, Ninja</div>
+    <div class="anime-score">Rating: 8.4</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=bleach';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Bleach.jpg" alt="Bleach">
+  <div class="anime-details">
+    <div class="anime-name">Bleach</div>
+    <div class="anime-meta">Action, Supernatural</div>
+    <div class="anime-score">Rating: 8.1</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=my-hero-academia';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/My Hero Academia.jpg" alt="My Hero Academia">
+  <div class="anime-details">
+    <div class="anime-name">My Hero Academia</div>
+    <div class="anime-meta">Action, School</div>
+    <div class="anime-score">Rating: 7.9</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=code-geass';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Code Geass.jpg" alt="Code Geass">
+  <div class="anime-details">
+    <div class="anime-name">Code Geass</div>
+    <div class="anime-meta">Mecha, Thriller</div>
+    <div class="anime-score">Rating: 8.9</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=tokyo-ghoul';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Tokyo Ghoul.jpg" alt="Tokyo Ghoul">
+  <div class="anime-details">
+    <div class="anime-name">Tokyo Ghoul</div>
+    <div class="anime-meta">Horror, Supernatural</div>
+    <div class="anime-score">Rating: 7.8</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=one-piece';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/One piece.jpg" alt="One Piece">
+  <div class="anime-details">
+    <div class="anime-name">One Piece</div>
+    <div class="anime-meta">Adventure, Fantasy</div>
+    <div class="anime-score">Rating: 9.1</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=black-clover';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/black clover.jpg" alt="Black Clover">
+  <div class="anime-details">
+    <div class="anime-name">Black Clover</div>
+    <div class="anime-meta">Action, Magic</div>
+    <div class="anime-score">Rating: 7.7</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=sword-art-online';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Sword Art Online.jpg" alt="Sword Art Online">
+  <div class="anime-details">
+    <div class="anime-name">Sword Art Online</div>
+    <div class="anime-meta">Fantasy, Adventure</div>
+    <div class="anime-score">Rating: 7.6</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=no-game-no-life';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/No Game No Life.jpg" alt="No Game No Life">
+  <div class="anime-details">
+    <div class="anime-name">No Game No Life</div>
+    <div class="anime-meta">Game, Fantasy</div>
+    <div class="anime-score">Rating: 8.2</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=parasyte';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Parasyte.jpg" alt="Parasyte">
+  <div class="anime-details">
+    <div class="anime-name">Parasyte</div>
+    <div class="anime-meta">Horror, Sci-Fi</div>
+    <div class="anime-score">Rating: 8.4</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=steins-gate';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Steins;Gate.jpg" alt="Steins;Gate">
+  <div class="anime-details">
+    <div class="anime-name">Steins;Gate</div>
+    <div class="anime-meta">Sci-Fi, Thriller</div>
+    <div class="anime-score">Rating: 9.1</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=gintama';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Gintama.jpg" alt="Gintama">
+  <div class="anime-details">
+    <div class="anime-name">Gintama</div>
+    <div class="anime-meta">Action, Comedy</div>
+    <div class="anime-score">Rating: 9.0</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=fairy-tail';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Fairy Tail.jpg" alt="Fairy Tail">
+  <div class="anime-details">
+    <div class="anime-name">Fairy Tail</div>
+    <div class="anime-meta">Magic, Adventure</div>
+    <div class="anime-score">Rating: 7.7</div>
+  </div>
+</div>
+
+<div class="anime-box" onclick="window.location.href='anime-details.html?id=hunter-x-hunter';" style="cursor: pointer;">
+  <img class="anime-thumbnail" src="images/Hunter x Hunter.jpg" alt="Hunter x Hunter">
+  <div class="anime-details">
+    <div class="anime-name">Hunter x Hunter</div>
+    <div class="anime-meta">Adventure, Fantasy</div>
+    <div class="anime-score">Rating: 9.0</div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 ⒢ Anime World. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

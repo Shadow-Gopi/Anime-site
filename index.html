@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AniVerse</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background:rgb(92, 92, 244);
+      font-family: 'Segoe UI', sans-serif;
+    
+    }
+        #bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -3; 
+  object-fit: cover;
+}
+
+    nav {
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+
+.anime-card {
+  background-image: url();
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  margin-top: 100px;
+  height: 300px;
+  text-align: center;
+  border-radius: 20px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-row {
+  display: flex;
+  padding-top: 80px;
+  padding-left: 50px;
+  margin-top: 100px;
+  justify-content: flex-start; /* push children to right */
+  align-items: center;       /* vertical center */
+  gap: 10px;
+}
+
+.search-bar {
+  padding-top: 80px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  width: 400px;
+  max-width: 400px;
+  margin: 0; /* remove margins */
+}
+.search-btn{
+  font-size: 30px;
+border-radius: 10px;
+border: none;
+cursor: pointer;  
+}
+
+.card-content{
+  color: white;
+  margin-left: 300px;
+  margin-top: 10px;
+}
+
+
+.anime-btn {
+  border-radius: 10px;
+  background: rgb(91, 91, 218);
+  width: 200px;
+  font-size: large;
+  font-weight: bold; /* Corrected here */
+  margin-left: 80px;
+  height: 30px;
+  margin-top: 30px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #eee;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Arial', sans-serif;
+  border-top: 2px solid #444;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  max-height: 200px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #aaa;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+    
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="videos/bg-video2.mp4" type="video/mp4" />
+   
+  </video>
+
+  <nav>
+    <a href="front page.html">Home</a>
+  </nav>
+
+
+ <div class="anime-card">
+
+    <div class="search-row">
+      <input type="text"  id="search-input" placeholder="Search anime..." class="search-bar">
+    <button class="search-btn"   onclick="searchAnime()">🔍</button>
+    </div>
+    <div class="card-content">
+  <h1>Welcome to AniVerse</h1>
+  <p class="subtitle">Your Ultimate Destination for Anime Discovery</p>
+  <p class="tagline">Search. Explore. Watch. Repeat.</p>
+</div>
+
+    <a href="front page.html" class="anime-btn">Go To Main 🡺</a>
+ </div>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 ⒢ Anime World. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+
+
+  <script>
+    function searchAnime() {
+      const query = document.getElementById("search-input").value.trim();
+      if (query !== "") {
+        window.location.href = `result2.html?anime=${encodeURIComponent(query)}`;
+      }
+    }
+  </script>
+
+
+</body>
+</html>

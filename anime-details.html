@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Anime Details</title>
+  <style>
+    .anime-details {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .anime-thumbnail {
+      width: 250px;
+      border-radius: 10px;
+    }
+#popular-btn {
+  display: block; /* or inline-block */
+  position: relative; /* if needed */
+  z-index: 10; /* if something is covering it */
+  margin: 20px; /* for spacing */
+}
+
+  </style>
+</head>
+<body>
+
+  
+
+  <div class="anime-details" id="anime-container">
+   <div class="anime-box">
+        <img class="anime-thumbnail" src="images/Parasyte.jpg" alt="Parasyte">
+        <div class="anime-details">
+          <div class="anime-name">Parasyte</div>
+          <div class="anime-meta">Horror, Sci-Fi</div>
+          <div class="anime-score">Rating: 8.4</div>
+        </div>
+      </div>
+
+      <div class="anime-box">
+        <img class="anime-thumbnail" src="images/Steins;Gate.jpg" alt="Steins;Gate">
+        <div class="anime-details">
+          <div class="anime-name">Steins;Gate</div>
+          <div class="anime-meta">Sci-Fi, Thriller</div>
+          <div class="anime-score">Rating: 9.1</div>
+        </div>
+      </div>
+
+      <div class="anime-box">
+        <img class="anime-thumbnail" src="images/Gintama.jpg" alt="Gintama">
+        <div class="anime-details">
+          <div class="anime-name">Gintama</div>
+          <div class="anime-meta">Action, Comedy</div>
+          <div class="anime-score">Rating: 9.0</div>
+        </div>
+      </div>
+
+      <div class="anime-box">
+        <img class="anime-thumbnail" src="images/Fairy Tail.jpg" alt="Fairy Tail">
+        <div class="anime-details">
+          <div class="anime-name">Fairy Tail</div>
+          <div class="anime-meta">Magic, Adventure</div>
+          <div class="anime-score">Rating: 7.7</div>
+        </div>
+      </div>
+
+      <div class="anime-box">
+        <img class="anime-thumbnail" src="images/Hunter x Hunter.jpg" alt="Hunter x Hunter">
+        <div class="anime-details">
+          <div class="anime-name">Hunter x Hunter</div>
+          <div class="anime-meta">Adventure, Fantasy</div>
+          <div class="anime-score">Rating: 9.0</div>
+        </div>
+      </div>
+
+     
+        <img src="images/Dragon Ball.jpg" alt="Dragon Ball" />
+        <h3>Dragon Ball</h3>
+        <p>Action, Martial Arts | 1986 | ⭐ 8.5</p>
+
+          <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Attack On Titan.jpg" alt="Attack on Titan">
+    <div class="anime-details">
+      <div class="anime-name">Attack on Titan</div>
+      <div class="anime-meta">Action, Drama | 2013</div>
+      <div class="anime-score">⭐ 9.0</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/solo leveling.jpg" alt="Solo Leveling">
+    <div class="anime-details">
+      <div class="anime-name">Solo Leveling</div>
+      <div class="anime-meta">Action, Fantasy | 2024</div>
+      <div class="anime-score">⭐ 8.6</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Jujutsu Kaisen.jpg" alt="Jujutsu Kaisen">
+    <div class="anime-details">
+      <div class="anime-name">Jujutsu Kaisen</div>
+      <div class="anime-meta">Action, Supernatural | 2020</div>
+      <div class="anime-score">⭐ 8.7</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/The Seven Deadly Sins.jpg" alt="The Seven Deadly Sins">
+    <div class="anime-details">
+      <div class="anime-name">The Seven Deadly Sins</div>
+      <div class="anime-meta">Action, Fantasy | 2014</div>
+      <div class="anime-score">⭐ 7.8</div>
+    </div>
+
+    <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Aharen-san wa Hakarenai.jpg" alt="Aharen-san wa Hakarenai" />
+    <div class="anime-details">
+      <div class="anime-name">Aharen-san wa Hakarenai</div>
+      <div class="anime-meta">Comedy, Romance | 2022</div>
+      <div class="anime-score">⭐ 7.2</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/kaguya sama.jpg" alt="Kaguya-sama" />
+    <div class="anime-details">
+      <div class="anime-name">Kaguya-sama: Love is War</div>
+      <div class="anime-meta">Comedy, Romance | 2019</div>
+      <div class="anime-score">⭐ 8.7</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Spy x Family.jpg" alt="Spy x Family" />
+    <div class="anime-details">
+      <div class="anime-name">Spy x Family</div>
+      <div class="anime-meta">Comedy, Action | 2022</div>
+      <div class="anime-score">⭐ 8.6</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Konosuba.jpg" alt="Konosuba" />
+    <div class="anime-details">
+      <div class="anime-name">Konosuba</div>
+      <div class="anime-meta">Comedy, Fantasy | 2016</div>
+      <div class="anime-score">⭐ 8.2</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/My Roommate is a Cat.jpg" alt="My Roommate is a Cat" />
+    <div class="anime-details">
+      <div class="anime-name">My Roommate is a Cat</div>
+      <div class="anime-meta">Slice of Life, Drama | 2019</div>
+      <div class="anime-score">⭐ 7.8</div>
+    </div>
+  </div>
+
+  
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Dragon Ball.jpg" alt="Dragon Ball" />
+    <div class="anime-details">
+      <div class="anime-name">Dragon Ball</div>
+      <div class="anime-meta">Action, Martial Arts | 1986</div>
+      <div class="anime-score">⭐ 8.5</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Naruto.jpg" alt="Naruto" />
+    <div class="anime-details">
+      <div class="anime-name">Naruto</div>
+      <div class="anime-meta">Action, Ninja | 2002</div>
+      <div class="anime-score">⭐ 8.3</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Bleach.jpg" alt="Bleach" />
+    <div class="anime-details">
+      <div class="anime-name">Bleach</div>
+      <div class="anime-meta">Action, Soul Reapers | 2004</div>
+      <div class="anime-score">⭐ 8.1</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Fullmetal Alchemist.jpeg" alt="Fullmetal Alchemist" />
+    <div class="anime-details">
+      <div class="anime-name">Fullmetal Alchemist</div>
+      <div class="anime-meta">Action, Adventure | 2009</div>
+      <div class="anime-score">⭐ 9.0</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/The Rising of the Shield Hero.jpg" alt="The Rising of the Shield Hero" />
+    <div class="anime-details">
+      <div class="anime-name">The Rising of the Shield Hero</div>
+      <div class="anime-meta">Action, Isekai | 2019</div>
+      <div class="anime-score">⭐ 8.0</div>
+    </div>
+  </div>
+
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Aharen-san wa Hakarenai.jpg" alt="Aharen-san wa Hakarenai" />
+    <div class="anime-details">
+      <div class="anime-name">Aharen-san wa Hakarenai</div>
+      <div class="anime-meta">Comedy, Romance | 2022</div>
+      <div class="anime-score">⭐ 7.2</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Fire Force.jpg" alt="Fire Force" />
+    <div class="anime-details">
+      <div class="anime-name">Fire Force</div>
+      <div class="anime-meta">Action, Supernatural | 2019</div>
+      <div class="anime-score">⭐ 7.7</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/The Brilliant Healer's New Life in the Shadows.jpg" alt="The Brilliant Healer's New Life in the Shadows" />
+    <div class="anime-details">
+      <div class="anime-name">The Brilliant Healer's New Life in the Shadows</div>
+      <div class="anime-meta">Fantasy, Isekai | 2024</div>
+      <div class="anime-score">⭐ 7.5</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/I'm the Evil Lord of an Intergalactic Empire!.jpg" alt="I'm the Evil Lord of an Intergalactic Empire!" />
+    <div class="anime-details">
+      <div class="anime-name">I'm the Evil Lord of an Intergalactic Empire!</div>
+      <div class="anime-meta">Sci-Fi, Comedy | 2024</div>
+      <div class="anime-score">⭐ 7.8</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Overlord.jpg" alt="Overlord" />
+    <div class="anime-details">
+      <div class="anime-name">Overlord</div>
+      <div class="anime-meta">Action, Fantasy | 2024</div>
+      <div class="anime-score">⭐ 8.6</div>
+    </div>
+  </div>
+
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Dragon Ball.jpg" alt="Dragon Ball" />
+    <div class="anime-details">
+      <div class="anime-name">Dragon Ball</div>
+      <div class="anime-meta">Action, Martial Arts | 1986</div>
+      <div class="anime-score">⭐ 8.5</div>
+    </div>
+  </div>
+
+  <div class="anime-box">
+    <img class="anime-thumbnail" src="images/Bleach.jpg" alt="Bleach" />
+    <div class="anime-details">
+      <div class="anime-name">Bleach</div>
+      <div class="anime-meta">Action, Soul Reapers | 2004</div>
+      <div class="anime-score">⭐ 8.1</div>
+    </div>
+  </div>
+
+
+      
+  </div>
+      <button id="popular-btn">Go Back to Popular</button>
+  <script>
+    // Step 1: Get ID from URL
+    const params = new URLSearchParams(window.location.search);
+    const animeId = params.get('id');
+
+    // Step 2: Your anime data
+    const animeData = {
+      "one-piece": {
+        name: "One Piece",
+        genre: "Action, Adventure",
+        year: "1999",
+        rating: "9.1",
+        image: "images/One piece.jpg"
+      },
+      "dragon-ball": {
+  name: "Dragon Ball",
+  genre: "Action",
+  year: "1986",
+  rating: "8.0",
+  image: "images/Dragon Ball.jpg"
+},
+
+      "black-clover": {
+        name: "Black Clover",
+        genre: "Action, Magic",
+        year: "2017",
+        rating: "7.7",
+        image: "images/black clover.jpg"
+      },
+      "parasyte": {
+        name: "Parasyte",
+        genre: "Horror, Sci-Fi",
+        year: "2014",
+        rating: "8.4",
+        image: "images/Parasyte.jpg"
+      },
+      "steins-gate": {
+        name: "Steins;Gate",
+        genre: "Sci-Fi, Thriller",
+        year: "2011",
+        rating: "9.1",
+        image: "images/Steins;Gate.jpg"
+      },
+      "gintama": {
+        name: "Gintama",
+        genre: "Action, Comedy",
+        year: "2006",
+        rating: "9.0",
+        image: "images/Gintama.jpg"
+      },
+      "fairy-tail": {
+        name: "Fairy Tail",
+        genre: "Magic, Adventure",
+        year: "2009",
+        rating: "7.7",
+        image: "images/Fairy Tail.jpg"
+      },
+      "hunter-x-hunter": {
+        name: "Hunter x Hunter",
+        genre: "Adventure, Fantasy",
+        year: "2011",
+        rating: "9.0",
+        image: "images/Hunter x Hunter.jpg"
+      },
+      "attack-on-titan": {
+    name: "Attack on Titan",
+    genre: "Action, Drama",
+    year: "2013",
+    rating: "9.0",
+    image: "images/Attack On Titan.jpg"
+  },
+  "solo-leveling": {
+    name: "Solo Leveling",
+    genre: "Action, Fantasy",
+    year: "2024",
+    rating: "8.6",
+    image: "images/solo leveling.jpg"
+  },
+  "jujutsu-kaisen": {
+    name: "Jujutsu Kaisen",
+    genre: "Action, Supernatural",
+    year: "2020",
+    rating: "8.7",
+    image: "images/Jujutsu Kaisen.jpg"
+  },
+  "seven-deadly-sins": {
+    name: "The Seven Deadly Sins",
+    genre: "Action, Fantasy",
+    year: "2014",
+    rating: "7.8",
+    image: "images/The Seven Deadly Sins.jpg"
+  },
+  "aharen-san": {
+    name: "Aharen-san wa Hakarenai",
+    genre: "Comedy, Romance",
+    year: "2022",
+    rating: "7.2",
+    image: "images/Aharen-san wa Hakarenai.jpg"
+  },
+  "kaguya-sama": {
+    name: "Kaguya-sama: Love is War",
+    genre: "Comedy, Romance",
+    year: "2019",
+    rating: "8.7",
+    image: "images/kaguya sama.jpg"
+  },
+  "spy-x-family": {
+    name: "Spy x Family",
+    genre: "Comedy, Action",
+    year: "2022",
+    rating: "8.6",
+    image: "images/Spy x Family.jpg"
+  },
+  "konosuba": {
+    name: "Konosuba",
+    genre: "Comedy, Fantasy",
+    year: "2016",
+    rating: "8.2",
+    image: "images/Konosuba.jpg"
+  },
+  "my-roommate-is-a-cat": {
+    name: "My Roommate is a Cat",
+    genre: "Slice of Life, Drama",
+    year: "2019",
+    rating: "7.8",
+    image: "images/My Roommate is a Cat.jpg"
+  },
+  "dragon-ball": {
+    name: "Dragon Ball",
+    genre: "Action, Martial Arts",
+    year: "1986",
+    rating: "8.5",
+    image: "images/Dragon Ball.jpg"
+  },
+  "naruto": {
+    name: "Naruto",
+    genre: "Action, Ninja",
+    year: "2002",
+    rating: "8.3",
+    image: "images/Naruto.jpg"
+  },
+  "bleach": {
+    name: "Bleach",
+    genre: "Action, Soul Reapers",
+    year: "2004",
+    rating: "8.1",
+    image: "images/Bleach.jpg"
+  },
+  "fullmetal-alchemist": {
+    name: "Fullmetal Alchemist",
+    genre: "Action, Adventure",
+    year: "2009",
+    rating: "9.0",
+    image: "images/Fullmetal Alchemist.jpeg"
+  },
+  "shield-hero": {
+    name: "The Rising of the Shield Hero",
+    genre: "Action, Isekai",
+    year: "2019",
+    rating: "8.0",
+    image: "images/The Rising of the Shield Hero.jpg"
+  },
+  "fire-force": {
+    name: "Fire Force",
+    genre: "Action, Supernatural",
+    year: "2019",
+    rating: "7.7",
+    image: "images/Fire Force.jpg"
+  },
+  "brilliant-healer": {
+    name: "The Brilliant Healer's New Life in the Shadows",
+    genre: "Fantasy, Isekai",
+    year: "2024",
+    rating: "7.5",
+    image: "images/The Brilliant Healer's New Life in the Shadows.jpg"
+  },
+  "evil-lord": {
+    name: "I'm the Evil Lord of an Intergalactic Empire!",
+    genre: "Sci-Fi, Comedy",
+    year: "2024",
+    rating: "7.8",
+    image: "images/I'm the Evil Lord of an Intergalactic Empire!.jpg"
+  },
+  "overlord": {
+    name: "Overlord",
+    genre: "Action, Fantasy",
+    year: "2024",
+    rating: "8.6",
+    image: "images/Overlord.jpg"
+  }
+    };
+
+    // Step 3: Display the matched anime
+    const anime = animeData[animeId];
+
+    if (anime) {
+      document.getElementById("anime-container").innerHTML = `
+        <img class="anime-thumbnail" src="${anime.image}" alt="${anime.name}" />
+        <h2>${anime.name}</h2>
+        <p>${anime.genre} | ${anime.year} | ⭐ ${anime.rating}</p>
+      `;
+    } else {
+      document.getElementById("anime-container").innerHTML = `<p>Anime not found!</p>`;
+    }
+
+
+
+    //  buttons 
+
+ document.getElementById('go-back-btn').addEventListener('click', () => {
+    window.location.href = 'front page.html#popular';
+  });
+  </script>
+</body>
+</html>
