@@ -344,3 +344,172 @@ p{
       font-size: 0.9rem;
       color: #ccc;
     }
+
+    @media (max-width: 768px) {
+  .page-wrapper {
+    padding: 30px 15px;
+  }
+
+  .title-thing {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .anime-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+  }
+
+  .anime-thumbnail {
+    height: 220px;
+  }
+
+  .anime-details {
+    padding: 10px;
+  }
+
+  .anime-name {
+    font-size: 1rem;
+  }
+
+  .anime-meta,
+  .anime-score {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-thing {
+    font-size: 1.6rem;
+  }
+
+  .anime-gallery {
+    grid-template-columns: 1fr; /* Single column for narrow devices */
+    gap: 15px;
+  }
+
+  .anime-thumbnail {
+    height: 180px;
+  }
+
+  .anime-name {
+    font-size: 0.95rem;
+  }
+
+  .anime-meta,
+  .anime-score {
+    font-size: 0.75rem;
+  }
+}
+
+
+
+    /* ===== Mobile Responsiveness ===== */
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .continer {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  #heading {
+    font-size: 24px;
+    padding-left: 0;
+  }
+
+  .Dropdown,
+  .profile,
+  .search-btn {
+    width: 100%;
+  }
+
+  .Dropdown-c {
+    position: relative;
+    width: 100%;
+  }
+
+  .Dropdown-Button {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  /* Slider */
+  .slide-container {
+    height: 300px;
+  }
+
+  .text-overlay {
+    max-width: 90%;
+    left: 5%;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .text-overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-overlay p,
+  .text-overlay button {
+    font-size: 0.9rem;
+  }
+
+  .arrow {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  /* Anime Cards */
+  .anime-cards {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 20px;
+    padding: 0;
+  }
+
+  .anime-card img {
+    height: 160px;
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-overlay h2 {
+    font-size: 1.2rem;
+  }
+
+  .text-overlay p {
+    font-size: 0.8rem;
+  }
+
+  .text-overlay button {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+
+  .anime-card {
+    max-width: 100%;
+  }
+
+  .slide-container {
+    height: 250px;
+  }
+
+  .anime-cards {
+    grid-template-columns: 1fr;
+  }
+}
