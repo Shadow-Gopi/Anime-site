@@ -153,7 +153,7 @@ nav a:hover {
   text-decoration: none;
 }
 
-/* Responsive */
+Responsive
 @media (max-width: 768px) {
   nav a {
     font-size: 4vw;

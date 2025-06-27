@@ -345,7 +345,7 @@ p{
       color: #ccc;
     }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .continer {
     gap: 15px;
     height: 60px;
@@ -441,5 +441,5 @@ p{
   .footer-links a {
     font-size: 12px;
   }
-}
+} */
 
