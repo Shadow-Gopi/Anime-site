@@ -87,6 +87,24 @@ nav a:hover {
   border: none;
   cursor: pointer;
 }
+ h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #f0f, #0ff, #ff0, #f0f);
+      background-size: 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: animate 5s linear infinite;
+    }
+
+    @keyframes animate {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 100%;
+      }
+    }
 
 /* Card Content */
 .card-content {
