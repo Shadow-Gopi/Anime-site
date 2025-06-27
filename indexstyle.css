@@ -114,12 +114,12 @@ nav a:hover {
   text-decoration: none;
 }
 
-/* .footer{
+.footer{
     background-color: rgb(0, 0, 0, 0.5);
     color: #eee;
     text-align: center;
     margin-top: 115px;
-} */
+}
 
 /* Footer */
 .footer {
@@ -153,8 +153,8 @@ nav a:hover {
   text-decoration: none;
 }
 
-Responsive
-@media (max-width: 768px) {
+/* Responsive */
+/* @media (max-width: 768px) {
   nav a {
     font-size: 4vw;
   }
@@ -205,4 +205,4 @@ Responsive
     font-size: 3.5vw;
     margin: 0 3vw;
   }
-}
+} */
